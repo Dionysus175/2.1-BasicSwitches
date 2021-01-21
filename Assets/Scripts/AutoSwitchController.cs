@@ -12,6 +12,7 @@ using UnityEngine;
 public class AutoSwitchController : MonoBehaviour
 {
     // switchOff reflects whether the switch is on ot off
+    // This is a test
     private bool switchOff = true;
 
     // switchAnimator will hold the gameobjects Animator
