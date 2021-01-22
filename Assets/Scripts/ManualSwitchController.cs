@@ -22,7 +22,7 @@ public class ManualSwitchController : MonoBehaviour
     // determines whether the switch is enabled or not. If enabled the
     // player can toggle the switch by pressing the spacebar
     private bool switchEnabled = false;
-
+    public Animator theBulbAnimator;
     // switchAnimator will hold the gameobjects Animator
     private Animator switchAnimator;
 
@@ -50,12 +50,14 @@ public class ManualSwitchController : MonoBehaviour
     {
         switchOff = false;
         switchAnimator.SetBool("SwitchOff", switchOff);
+        theBulbAnimator.SetBool("Trigger", true);
     }
 
     public void turnOff()
     {
         switchOff = true;
         switchAnimator.SetBool("SwitchOff", switchOff);
+        theBulbAnimator.SetBool("Trigger", false);
     }
 
     public void enableSwitch()
@@ -76,6 +78,7 @@ public class ManualSwitchController : MonoBehaviour
         {
             switchOff = !switchOff;
             switchAnimator.SetBool("SwitchOff", switchOff);
+            theBulbAnimator.SetBool("Trigger", false);
         }
         else
         {
