@@ -16,12 +16,6 @@ public class BulbController : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void turnOn()
     {
 
