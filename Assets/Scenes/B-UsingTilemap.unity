@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518edbc723e4ba147b53832312c82715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theBulbAnimator: {fileID: 1371400082}
 --- !u!1 &658735377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1481,3 +1482,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bdb80455755fd4291452950a8800b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  theBulbAnimator: {fileID: 1371400082}

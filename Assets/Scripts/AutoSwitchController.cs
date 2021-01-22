@@ -17,7 +17,7 @@ public class AutoSwitchController : MonoBehaviour
 
     // switchAnimator will hold the gameobjects Animator
     private Animator switchAnimator;
-    public Animator theBulbAnimator;
+    
     // The Awake function of each class is called before the Start function. It is
     // here you should initialise class properties/variables like those above.
     void Awake()
@@ -34,14 +34,14 @@ public class AutoSwitchController : MonoBehaviour
     {
         switchOff = false;
         switchAnimator.SetBool("SwitchOff", switchOff);
-        theBulbAnimator.SetBool("Trigger", true);
+       
     }
 
     public void turnOff()
     {
         switchOff = true;
         switchAnimator.SetBool("SwitchOff", switchOff);
-        theBulbAnimator.SetBool("Trigger", false);
+        
     }
 
     void OnTriggerEnter2D(Collider2D other)
